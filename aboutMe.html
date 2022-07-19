@@ -9,7 +9,12 @@
     <meta property="og:image" content="공유할 이미지">
     <title>Gyuree Kim - About Me</title>
     <style type="text/css">
-        p{font-family: "나눔스퀘어_ac Regular"}
+        p, .circle{font-family: "나눔스퀘어_ac Regular"}
+        a:link { 
+            color: #928f93; 
+            text-decoration: underline;
+            font-family: "나눔스퀘어_ac Regular"
+        }	
         body {
             background-color: #cb9dd6;
         }
@@ -42,8 +47,11 @@
         .wrap {
             margin: 40px 50px 0px 50px;
         }
-        .AboutMe, .Contact, .Skills, .Project, .WorkExperience, .Education, .CertificateAndEtc {
+        .AboutMe, .Contact, .Skills, .Project, .WorkExperience, .Education {
             margin: 60px 50px 0px 50px;
+        }
+        .CertificateAndEtc {
+            margin: 60px 50px 200px 50px;
         }
         .title {
             color:#450355;
@@ -52,7 +60,17 @@
         .box {
             background-color: white;
             border-radius: 15px;
-            padding: 10px 10px 10px 10px;
+            padding: 10px 20px 10px 20px;
+        }
+        .pName {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .wName, .eName {
+            font-weight: bold;
+        }
+        .copyright {
+            text-align: center;
         }
     </style>
 </head>
@@ -81,37 +99,110 @@
     <div class="Skills">
         <h1 class="title">Skills</h1>
         <div class="box">
-            <p class="i1">Mobile: 010-4943-3549</p>
-            <p class="i2">E-Mail: kgr1012@naver.com</p>
+            <ul class="circle">
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>Kotlin</li>
+                <li>MySQL</li>
+                <li>Git</li>
+                <li>HTML</li>
+                <li>Power Platform</li>
+            </ul>
         </div>
     </div>
     <div class="Project">
         <h1 class="title">Project</h1>
         <div class="box">
-            <p class="i1">Mobile: 010-4943-3549</p>
-            <p class="i2">E-Mail: kgr1012@naver.com</p>
+            <p class="pName">HOLO</p>
+            <p class="pText">1인가구 공동구매 및 정보공유 커뮤니티 기반 서비스 개발</p>
+            <p class="pText">22.02~22.06</p>
+            <br>
+            <a href="https://github.com/YeeunLee8245/HOLO-Android">GitHub</a>
+            <br>
+            <a href="https://github.com/stellakim1012/">Project Detail</a>
+            <hr style="height:1px;border:none;background-color:#450355;">
+            <p class="pName">한글 폰트 분류기</p>
+            <p class="pText">500종의 한글 폰트를 98%의 정확도로 본류하는 딥러닝 모델 개발</p>
+            <p class="pText">21.09~21.12</p>
+            <br>
+            <a href="https://github.com/stellakim1012/OSP-Hangeul-Fonts-Classification">GitHub</a>
+            <br>
+            <a href="https://github.com/stellakim1012/">Project Detail</a>
+            <hr style="height:1px;border:none;background-color:#450355;">
+            <p class="pName">Virtual Circuit</p>
+            <p class="pText">메타버스 환경의 가상 전자회로 시뮬레이터 설계 </p>
+            <p class="pText">21.08~22.11</p>
+            <br>
+            <a href="https://github.com/jiyeon2781/Circuit_Simulator">GitHub</a>
+            <br>
+            <a href="https://github.com/stellakim1012/">Project Detail</a>
+            <hr style="height:1px;border:none;background-color:#450355;">
+            <p class="pName">Hidden Camera Detector</p>
+            <p class="pText">적외선 카메라 기반의 몰래카메라 검출 알고리즘 개발</p>
+            <p class="pText">20.10~21.12</p>
+            <br>
+            <a href="https://github.com/jiyeon2781/Circuit_Simulator">GitHub</a>
+            <br>
+            <a href="https://github.com/stellakim1012/">Project Detail</a>
         </div>
     </div>
     <div class="WorkExperience">
         <h1 class="title">Work Experience</h1>
         <div class="box">
-            <p class="i1">Mobile: 010-4943-3549</p>
-            <p class="i2">E-Mail: kgr1012@naver.com</p>
+            <p class="wName">에드워드코리아</p>
+            <p class="wText">HR 인턴 | 22.07 - 22.12</p>
+            <ul class="circle">
+                <li>SharePoint를 기반으로 한 사내 Intranet 개편</li>
+                <br>
+                <li>HR Contents 퍼블리싱</li>
+                <br>
+                <li>MS Office Power Platform을 통한 RPA 적용</li>
+            </ul>
+            <hr style="height:1px;border:none;background-color:#450355;">
+            <p class="wName">지능형 영상분석 연구실</p>
+            <p class="wText">학부연구생 | 20.01 - 21.12</p>
+            <ul class="circle">
+                <li>Artificial Intelligence: Deep Learning, Machine Learning</li>
+                <br>
+                <li>Image Computing: Image Processing, Computer Vision, Image Analysis</li>
+                <br>
+                <li>Multimedia: Image, Video, Metaverse</li>
+            </ul>
         </div>
     </div>
     <div class="Education">
         <h1 class="title">Education</h1>
         <div class="box">
-            <p class="i1">Mobile: 010-4943-3549</p>
-            <p class="i2">E-Mail: kgr1012@naver.com</p>
+            <p class="eName">금오공과대학교</p>
+            <p class="eText">Kumoh National Institute of Technology | 19.03 ~ 23.02</p>
+            <ul class="circle">
+                <li>컴퓨터공학과 학사 졸업</li>
+                <br>
+                <li>GPA 4.47 / Major GPA 4.46</li>
+            </ul>
+            <hr style="height:1px;border:none;background-color:#450355;">
+            <p class="eName">용인한국외국어대학교부설고등학교</p>
+            <p class="eText">Hankuk Academy of Foreign Studies | 15.03 ~ 18.02</p>
+            <ul class="circle">
+                <li>자연과학과정 졸업</li>
+            </ul>
         </div>
     </div>
     <div class="CertificateAndEtc">
         <h1 class="title">Certificate & Etc</h1>
         <div class="box">
-            <p class="i1">Mobile: 010-4943-3549</p>
-            <p class="i2">E-Mail: kgr1012@naver.com</p>
+            <p class="eName">TOEIC</p>
+            <p class="eText">ETS | 21.08.29 | Score 870</p>
+            <br>
+            <p class="eName">장학증서</p>
+            <p class="eText">수원시장학재단 | 21.08.29</p>
         </div>
     </div>
+    <footer>
+        <p class="copyright">Copyright © 2022 Gyuree Kim. All rights reserved.</p>
+    </footer>
 </body>
 </html>
